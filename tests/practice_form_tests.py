@@ -28,3 +28,7 @@ class PracticeFormTest(BaseTest):
             'NCR',
             'Delhi'
         )
+        with self.subTest("Check input fields are not None"):
+            self.assertIsNotNone(self.page_class.FIRST_NAME_INPUT, "FIRST_NAME_INPUT should not be None")
+            self.assertIsNotNone(self.page_class.LAST_NAME_INPUT, "LAST_NAME_INPUT should not be None")
+            self.assertIsNotNone(self.page_class.EMAIL_INPUT, "EMAIL_INPUT should not be None")

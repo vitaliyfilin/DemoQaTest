@@ -1,4 +1,6 @@
 import unittest
+
+import pytest
 from selenium import webdriver
 
 
@@ -25,4 +27,3 @@ class BaseTest(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
-
